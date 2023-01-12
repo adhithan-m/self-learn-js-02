@@ -1,0 +1,46 @@
+<!-- Recursion and Return       -->
+
+<html>
+<head>
+    <script type ="text/javascript">
+    function callme()
+	{
+	   alert("welcome");
+	   var a= document.F1.T1.value;
+	   var b= document.F2.T2.value;
+	   var c=add(a,b) //for return
+	   alert(c);
+	   mycall(10); //for recursion
+	}
+	function add(a,b)
+	{
+	 return Number(a,b);
+	}
+	function showme()
+	{
+	alert("I'm show");
+	}
+	function mycall(num)
+	{
+	var n=num-1;
+	if(n>0)
+	{
+	alert("the value of N is "+""+n);
+	}
+	else
+	{
+	alert("Recursion completed")
+	}
+	}
+	</script>
+</head>
+<body>
+ <form name="F1">
+	  Enter the first number  <input type="text" name="T1"/><br>
+	  Enter the second number <input type="text" name="T2"/> <br>
+	   <input type="button" value="click" onclick="callme('welcome')"/> <br>
+	   <a href="showme()"><h3>click me</h3></a>
+	   </form>
+</body>
+</html>
+
